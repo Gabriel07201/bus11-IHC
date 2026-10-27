@@ -43,4 +43,3 @@ A primeira versão não exige hospedagem pública. A demonstração pode ser fei
 ## Apoio de inteligência artificial
 
 Inteligência artificial foi usada como apoio para organizar o escopo e redigir esta documentação inicial. O conteúdo foi revisado e aprovado.
-

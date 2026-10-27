@@ -49,4 +49,3 @@ IA generativa apoiou a organização do escopo e a redação inicial desta docum
 1. Borsci et al. (2021). [The Chatbot Usability Scale: the Design and Pilot of a Usability Scale for Interaction with AI-Based Conversational Agents](https://link.springer.com/article/10.1007/s00779-021-01582-9).
 2. Borsci et al. (2022, publicado em 2023). [A confirmatory factorial analysis of the Chatbot Usability Scale: a multilanguage validation](https://link.springer.com/article/10.1007/s00779-022-01690-0).
 3. Borsci e Schmettow (2024). [Re-examining the chatBot Usability Scale (BUS-11) to assess user experience with customer relationship management chatbots](https://link.springer.com/article/10.1007/s00779-024-01834-4).
-

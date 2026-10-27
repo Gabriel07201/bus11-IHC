@@ -37,4 +37,3 @@ O projeto estará concluído quando os critérios abaixo forem atendidos e demon
 - [ ] O fluxo de participante e o de pesquisador podem ser demonstrados na mesma máquina, simulando duas pessoas.
 - [ ] A interface está disponível em português e inglês; a tradução portuguesa da BUS-11 está identificada como tradução local não validada.
 - [ ] O código-fonte está versionado no repositório GitHub do projeto.
-

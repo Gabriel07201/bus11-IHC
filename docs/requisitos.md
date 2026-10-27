@@ -49,4 +49,3 @@ Desenvolver uma ferramenta acadêmica, simples de operar, para gerenciar estudos
 - Oferecer fluxos especiais para chatbot indisponível, justificativa ou avaliação pulada.
 - Alterar os itens da BUS-11 ou oferecer mais de um idioma dentro do mesmo estudo.
 - Aplicar as classificações de referência do artigo de 2024 ao escore normalizado do projeto.
-
