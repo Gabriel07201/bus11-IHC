@@ -38,7 +38,7 @@ Desenvolver uma ferramenta acadêmica, simples de operar, para gerenciar estudos
 - **RNF-01 — Tecnologias:** usar Next.js, React e PostgreSQL; manter o código no GitHub.
 - **RNF-02 — Operação local:** permitir execução local e acesso pela rede local para uso em dispositivos diferentes. Hospedagem pública é opcional e não faz parte do requisito inicial.
 - **RNF-03 — Simplicidade:** manter fluxos distintos e diretos para pesquisador e participante; a participação não exige criação de conta.
-- **RNF-04 — Idiomas:** oferecer interface e conteúdo do estudo em português e inglês. A versão em português da BUS-11 será identificada como tradução local do grupo, sem alegação de validação.
+- **RNF-04 — Idiomas:** oferecer interface e conteúdo do estudo em português e inglês. A documentação metodológica registra a versão portuguesa da BUS-11 como tradução local do grupo, sem alegação de validação; as telas não repetem esse aviso durante o uso.
 - **RNF-05 — Minimização de dados:** não solicitar nome ou e-mail por padrão. Os campos adicionais são definidos pelo pesquisador e ficam sujeitos às informações apresentadas no consentimento.
 
 ## Fora do escopo inicial

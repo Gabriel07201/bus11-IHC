@@ -35,5 +35,5 @@ O projeto estará concluído quando os critérios abaixo forem atendidos e demon
 - [ ] A aplicação usa Next.js, React e PostgreSQL.
 - [ ] A aplicação funciona localmente e pode ser acessada de outro dispositivo na mesma rede local.
 - [ ] O fluxo de participante e o de pesquisador podem ser demonstrados na mesma máquina, simulando duas pessoas.
-- [ ] A interface está disponível em português e inglês; a tradução portuguesa da BUS-11 está identificada como tradução local não validada.
+- [ ] A interface está disponível em português e inglês; a documentação metodológica registra a tradução local da BUS-11 sem alegar validação, e o aviso não aparece nas telas de uso.
 - [ ] O código-fonte está versionado no repositório GitHub do projeto.

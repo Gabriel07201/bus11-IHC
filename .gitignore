@@ -1,0 +1,30 @@
+# Dependencies and build output
+node_modules/
+.next/
+out/
+build/
+coverage/
+*.tsbuildinfo
+next-env.d.ts
+
+# Local configuration and credentials
+.env*
+!.env.example
+
+# Local agent state and personal planning
+.serena/
+.superpowers/
+.impeccable/
+.playwright-cli/
+graphify-out/
+AGENTS.md
+PRODUCT.md
+DESIGN.md
+docs/superpowers/
+
+# Operating system and debug logs
+.DS_Store
+Thumbs.db
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*

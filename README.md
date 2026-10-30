@@ -4,7 +4,7 @@ Ferramenta acadêmica para organizar estudos que avaliam a experiência de uso d
 
 Projeto de desenvolvimento da disciplina de Interação Humano-Computador, realizado em grupo de três pessoas.
 
-> **Estado:** documentação inicial. 
+> **Estado:** primeira versão executável em desenvolvimento.
 
 ## Objetivo
 
@@ -34,6 +34,40 @@ A ferramenta não implementa os chatbots avaliados. O pesquisador cadastra cada 
 
 A primeira versão não exige hospedagem pública. A demonstração pode ser feita no mesmo computador; a coleta prevista entre dispositivos usa a rede local.
 
+## Execução local
+
+Requisitos: Node.js compatível com Next.js 16, pnpm e um servidor PostgreSQL acessível. O banco e o usuário precisam existir antes de iniciar a aplicação; o projeto não inicia o serviço PostgreSQL nem cria o banco.
+
+No PowerShell, na pasta do projeto:
+
+```powershell
+pnpm install
+Copy-Item .env.example .env.local
+```
+
+Configure a URL do PostgreSQL em `.env.local`:
+
+```powershell
+DATABASE_URL=postgresql://bus11_app:sua-senha@127.0.0.1:5432/bus11
+```
+
+O administrador do PostgreSQL deve criar o usuário e o banco antes do primeiro início. Exemplo executado no `psql` por alguém com permissão administrativa:
+
+```sql
+CREATE ROLE bus11_app LOGIN PASSWORD 'substitua-esta-senha';
+CREATE DATABASE bus11 OWNER bus11_app;
+```
+
+Ao iniciar, a aplicação aplica automaticamente as migrações no banco informado. Depois, execute `pnpm dev` e abra `http://localhost:3000/pt-BR`. O pesquisador cria um grupo na tela de acesso, escolhendo o código e a senha compartilhada. Não há recuperação de senha; guarde essas credenciais com o grupo.
+
+A chave interna usada para assinar sessões e proteger códigos de participação é gerada automaticamente. No Windows ela fica em `%LOCALAPPDATA%\bus11-ihc\app-secret`; em outros sistemas, em `$XDG_CONFIG_HOME/bus11-ihc/app-secret` ou `~/.config/bus11-ihc/app-secret`. Faça cópia de segurança dessa chave junto com o banco. Se a chave não existir e já houver dados de participantes, a aplicação interrompe a inicialização em vez de gerar outra e invalidar os códigos. Uma instalação antiga que ainda tenha um `APP_SECRET` válido o copia para esse arquivo na primeira inicialização.
+
+Para acesso de outro dispositivo na mesma rede, use `pnpm dev:lan` e abra `http://<IP-do-computador>:3000` nele. A configuração de PostgreSQL e a chave permanecem no computador que executa a aplicação.
+
+Os arquivos `.env.local` e demais `.env*` são ignorados pelo Git. Não versione credenciais nem use os valores de exemplo como senha real.
+
+Verificações disponíveis: `pnpm lint`, `pnpm exec tsc --noEmit`, `pnpm test` e `pnpm build`.
+
 ## Documentação
 
 - [Requisitos](docs/requisitos.md)
@@ -42,4 +76,4 @@ A primeira versão não exige hospedagem pública. A demonstração pode ser fei
 
 ## Apoio de inteligência artificial
 
-Inteligência artificial foi usada como apoio para organizar o escopo e redigir esta documentação inicial. O conteúdo foi revisado e aprovado.
+Inteligência artificial foi usada como apoio no planejamento, na implementação inicial e na redação desta documentação. O grupo deve revisar e validar o código, o protocolo e o conteúdo metodológico.

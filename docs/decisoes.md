@@ -18,6 +18,9 @@
 | Consentimento | Informações e consentimento aparecem antes da coleta. Recusar encerra a participação sem guardar respostas do questionário. |
 | Ciclo do estudo | Rascunho, coleta aberta e encerrado. Encerrar impede novas participações, mas mantém leitura e exportação; o pesquisador pode reabrir. |
 | Falhas durante a sessão | Tratamento específico de indisponibilidade, motivo de interrupção e opção de pular chatbot fica fora do primeiro escopo. A retomada simples pelo código permanece. |
+| Cadastro do grupo | A equipe cria um grupo na tela de acesso do pesquisador, definindo um código único e uma senha compartilhada. Não há recuperação de senha nesta versão. |
+| PostgreSQL | O servidor, banco e usuário são configurados pelo ambiente antes do uso. A aplicação conecta diretamente ao PostgreSQL e aplica suas migrações na inicialização; Docker não é requisito. |
+| Chave interna | A aplicação gera e persiste automaticamente a chave fora do repositório. A equipe deve preservá-la junto com o backup do banco; não substituir automaticamente uma chave ausente quando já existem dados de participantes. |
 
 ## Instrumento e pontuação
 
@@ -42,7 +45,7 @@ A interface e os estudos podem ser apresentados em português e inglês. O texto
 
 ## Transparência sobre uso de IA
 
-IA generativa apoiou a organização do escopo e a redação inicial desta documentação. O conteúdo foi revisado e aprovado pelo proponente; a equipe deve validar as decisões antes de tratá-las como consenso coletivo.
+IA generativa apoiou a organização do escopo, a implementação inicial da ferramenta e a redação da documentação. O material foi revisado pelo proponente; a equipe deve validar o código e as decisões metodológicas antes de tratá-los como consenso coletivo.
 
 ## Fontes consultadas
 
